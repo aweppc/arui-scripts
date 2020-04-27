@@ -30,6 +30,7 @@ module.exports = {
     version: appPackage.version,
     dockerRegistry: '' || packageSettings.dockerRegistry,
     baseDockerImage: packageSettings.baseDockerImage || 'heymdall/alpine-node-nginx:8.9.1',
+    containerUserId: packageSettings.containerUserId || '0',
 
     // general paths
     cwd: CWD,
